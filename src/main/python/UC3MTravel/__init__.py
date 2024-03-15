@@ -1,1 +1,2 @@
-from src.main.python.UC3MTravel.HotelManager import HotelManager
+from UC3MTravel.HotelManager import HotelManager
+from UC3MTravel.HotelManagementException import HotelManagementException
