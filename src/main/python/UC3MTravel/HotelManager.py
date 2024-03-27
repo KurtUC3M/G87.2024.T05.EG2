@@ -8,12 +8,12 @@ class HotelManager:
     def __init__(self):
         pass
 
-    def validatecreditcard( self, x ):
+    def validate_credit_card( self, x ):
         # PLEASE INCLUDE HERE THE CODE FOR VALIDATING THE GUID
         # RETURN TRUE IF THE GUID IS RIGHT, OR FALSE IN OTHER CASE
         return True
 
-    def ReaddatafromJSOn( self, fi):
+    def read_data_from_json( self, fi):
 
         try:
             with open(fi) as f:
@@ -30,7 +30,7 @@ class HotelManager:
             req = HotelReservation(IDCARD="12345678Z",creditcardNumb=c,nAMeAndSURNAME="John Doe",phonenumber=p,room_type="single",numdays=3)
         except KeyError as e:
             raise HotelManagementException("JSON Decode Error - Invalid JSON Key") from e
-        if not self.validatecreditcard(c):
+        if not self.validate_credit_card(c):
             raise HotelManagementException("Invalid credit card number")
 
         # Close the file

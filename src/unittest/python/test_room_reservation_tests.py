@@ -6,7 +6,7 @@ from UC3MTravel.HotelManagementException import HotelManagementException
 
 class TestRoomReservation(TestCase):
 
-    def setUp(self):
+    def set_up(self):
         pass
     def test_hotel_reservation_ok(self):
         pass

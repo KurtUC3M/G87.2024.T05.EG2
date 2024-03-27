@@ -6,7 +6,7 @@ from src.main.python.UC3MTravel import HotelManager
 
 def main():
     mng = HotelManager()
-    res = mng.ReaddatafromJSOn("test.json")
+    res = mng.read_data_from_json("test.json")
     strRes = res.__str__()
     print(strRes)
     print("CreditCard: " + res.CREDITCARD)
